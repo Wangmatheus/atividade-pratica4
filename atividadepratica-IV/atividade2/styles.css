@@ -1,0 +1,37 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background-color:#ffffff;display:flex;flex-direction:column;min-height:100vh;}
+.header-restaurante{background-color:#7A3310;color:#ffffff;display:flex;justify-content:space-between;align-items:center;padding:25px 50px;}
+.logo{font-size:32px;font-weight:bold;}
+.menu-nav{display:flex;gap:25px;}
+.menu-nav a{color:#ffffff;text-decoration:none;font-size:16px;transition:opacity 0.2s;}
+.menu-nav a:hover{opacity:0.8;}
+.banner-principal{background-color:#E65C00;color:#ffffff;display:flex;justify-content:center;align-items:center;height:320px;padding:20px;flex-shrink:0;}
+.banner-principal h1{font-size:28px;font-weight:bold;letter-spacing:0.5px;}
+.container-pratos{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;padding:40px 25px;background-color:#ffffff;flex:1;}
+.card-prato{background-color:#F1F3F5;border-radius:12px;height:240px;display:flex;justify-content:center;align-items:center;}
+.card-prato span{font-size:16px;color:#000000;}
+.area-contato{text-align:center;padding:40px 20px 60px 20px;background-color:#ffffff;color:#333333;flex-shrink:0;}
+.area-contato h2{font-size:24px;color:#7A3310;margin-bottom:15px;}
+.area-contato p{font-size:16px;color:#666666;}
+.rodape-restaurante{background-color:#59250B;color:#ffffff;text-align:center;padding:18px;font-size:14px;margin-top:auto;width:100%;flex-shrink:0;}
+@media (max-width:1024px){
+.container-pratos{grid-template-columns:repeat(2,1fr);gap:15px;padding:20px 15px;}
+.logo{font-size:26px;}
+.banner-principal{height:250px;}
+.banner-principal h1{font-size:22px;}
+.card-prato{height:200px;}
+.area-contato{padding:30px 20px 40px 20px;}
+.area-contato h2{font-size:20px;}
+.area-contato p{font-size:14px;}
+}
+@media (max-width:480px){
+.header-restaurante{flex-direction:column;gap:20px;padding:20px;}
+.menu-nav{flex-direction:column;align-items:center;width:100%;gap:0;}
+.menu-nav a{width:100%;text-align:center;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.1);}
+.menu-nav a:last-child{border-bottom:none;}
+.banner-principal{height:180px;}
+.banner-principal h1{font-size:18px;}
+.container-pratos{grid-template-columns:1fr;gap:15px;padding:20px 15px;}
+.card-prato{height:180px;}
+.area-contato{padding:20px 15px 30px 15px;}
+}
